@@ -1,0 +1,44 @@
+/* Animation */
+@-webkit-keyframes fader {
+	0% { opacity: 0; }
+	50% { opacity 1; }
+	100% { opacity: 1;}
+}
+
+/* Classes */
+.slidecontainer {
+	width: 400px;
+	height: 400px;
+	background: rgba(0, 0, 0, .3);
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.box1{
+	width: 400px;
+	opacity: 0;
+	height: 400px;
+	background: rgba(255,0,0,1);
+	z-index: 92;
+	
+	-webkit-animation: fader 15s infinite;
+	-webkit-animation-delay:5s;
+}
+.box2{
+	width: 400px;
+	height: 400px;
+	background: rgba(0,0,255,1);
+	z-index: 91;
+	
+	-webkit-animation: fader 15s infinite;
+	-webkit-animation-delay:10s;
+}
+.box3{
+	width: 400px;
+	height: 400px;
+	background: rgba(0,255,0,0.5);
+	z-index: 90;
+	
+	-webkit-animation: fader 15s infinite;
+	-webkit-animation-delay:15s;
+}
